@@ -33,6 +33,6 @@
         "i18next": "^19.5.1",
         "i18next-sprintf-postprocessor": "^0.2.2",
         "lodash.flattendeep": "^4.4.0",
-        "source-map-support": "^0.5.16"
+        "source-map-support": "^0.5.19"
     }
 }
