@@ -42,10 +42,10 @@
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.33.tgz#17083d9c569048792f4f33ef6cd6aaf54d5b22d3"
   integrity sha512-p13MzAb/1ZJK1h0jDhRjdFqlRHC44HAOS7qYuVpn7NnFDv8UdNbRjExfhK69syvI9IoIR4NN4dRGjpVDsN6tEQ==
 
-"@types/aws-lambda@^8.10.42":
-  version "8.10.42"
-  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.42.tgz#03a7fbb7f74925816c0697d98275bb78d166722e"
-  integrity sha512-MxZLTiVE+ieUSuL47M0Y7OzdfwLZHY63dvOo756NvyYlG9xxFWFkUIINmDWjCt/2DJfcq3J6+9dVsYt17Le5yA==
+"@types/aws-lambda@^8.10.57":
+  version "8.10.57"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.57.tgz#39ca3bbe52c5b4e27dc83c2a3b5ed434834568b9"
+  integrity sha512-LMOA9bJLerYoe2KvzHugfaLTa0jUPWrqwxq5VUZ/ZuAMKLJm6oNdCio38vw8jWEIAkPR3P6mBIwnU1DPgelAKg==
 
 "@types/body-parser@*":
   version "1.19.0"
