@@ -103,7 +103,7 @@ The code is now deployed to AWS Lambda. APIGateway should now be configured to r
 
 #### Dialogflow
 
-With dialogflow we will also create a new Action in the actions console, but this time we will have to import the intents found in the zip file in the assets folder.
+For Dialogflow we will also create a new Action in the actions console, but this time we will have to import the intents found in the zip file in the assets folder.
 
 1. Go to the [Action console](https://console.actions.google.com/)
 2. Create a new project.
@@ -115,7 +115,9 @@ With dialogflow we will also create a new Action in the actions console, but thi
 8. In the sidebar click fullfillment and insert the "/dialogflow" url from the Lambda function.
 9. Click save
 
-##### Alexa smart home skill
+#### Alexa smart home skill
+
+Configuring the Alexa smart home skill, is almost the same as for google.
 
 1. Go to the [Alexa skill console](https://developer.amazon.com/alexa/console/ask).
 2. Create a new skill, and pick the smart home model.
@@ -172,6 +174,20 @@ This project supports internationalization, in the `src/locales` folder are the 
 
 These translations can also be used for the Alexa Custom Skill implementation.
 In the `src/google/index.ts` the function `await initI18N();` this function call can be moved to the lambda entrypoint if the Alexa Custom skill is implemented.
+
+#### Crownston Cloud used endpoints
+
+Account linking requires a client id and client secret from crownstone, it also requires the scope of the tokens requested.
+For the scope i used "all". This scope probably is not the best for production usage. The following list contains all the api endpoints used, its for the best to determine the scopes required for these endpoints.
+
+-   GET /Stones
+-   GET /Stones/:id/owner
+-   PUT /Stones/:id/setSwitchStateRemotely
+-   GET /Stones/:id/currentSwitchState
+-   GET /users/me
+-   GET /users/:id/currentLocation
+-   GET /Spheres/:id/users
+-   GET /Spheres/:id/presentPeople
 
 ---
 
