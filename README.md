@@ -6,9 +6,8 @@
 
 -   [Installation](#installation)
 -   [Features](#features)
--   [Usage](#usage)
 -   [Documenation](#documentation)
--   [License](#license)
+-   [Copyrights](#copyrights)
 
 ---
 
