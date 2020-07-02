@@ -4,7 +4,6 @@ import { getApi } from '../utils/api';
 import { createLogger } from '../utils/logger';
 import flatten from 'lodash.flattendeep';
 import { CustomData } from '../interface';
-import { APIGatewayEvent } from 'aws-lambda';
 
 const log = createLogger('google/smarthome');
 
@@ -228,7 +227,7 @@ smarthomeApp.onQuery(async (body, headers) => {
 
 /**
  * This method is invoked when we receive a "DISCONNECT" message from Google Gome smart action.
- * We are expected to stop reporting the crownstone state of this users devices to Gooogle.
+ * We are expected to stop reporting the crownstone state of this users devices to Google.
  */
 smarthomeApp.onDisconnect(async (body, headers) => {
     const api = getApi(headers);

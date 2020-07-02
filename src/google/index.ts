@@ -16,6 +16,7 @@ export const googleSmartHome = async (event: APIGatewayEvent, ctx: Context) => {
         const body = JSON.parse(event.body || '{}');
         payload = await smarthome.smarthomeApp.handler(body, event.headers);
     } else if (event.path.includes('dialogflow')) {
+        // initialise i18n, if the custom skill is implemented this should move up to the lambda entrypoint
         await initI18N();
         const body = JSON.parse(event.body || '{}');
         payload = await dialogflowApp.handler(body, event.headers);

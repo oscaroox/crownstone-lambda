@@ -16,6 +16,11 @@ type DialogFlowConv = DialogflowConversation<any, any, Contexts>;
 
 type Conversation = DialogFlowConv & { api: Api; i18n: LocaleService };
 
+/**
+ * Check if the user is authorize to call this intent
+ * This function also attaches the api and i18n in to the conv object
+ * @param cb
+ */
 export const authorize = (
     cb: (conv: Conversation, params: Parameters, args: Argument) => Promise<any> | any,
 ): ((conv: DialogFlowConv, params: Parameters, args: Argument) => void) => {

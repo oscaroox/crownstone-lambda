@@ -1,11 +1,8 @@
 import 'source-map-support/register';
 import { AmazonSmartHomeSkillEvent, AmazonCustomSkillEvent, Mappable } from './amazon.interface';
 import { alexaCustomSkill, alexaSmartHomeSkill } from './alexa';
-import { createLogger } from './utils/logger';
 import { APIGatewayEvent } from 'aws-lambda';
 import { googleSmartHome } from './google';
-
-const log = createLogger('src/index');
 
 /**
  * Check if this is a SmartHome skill evebt

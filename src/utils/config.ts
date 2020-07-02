@@ -7,7 +7,7 @@ let jwt: SmartHomeJwt | undefined;
 
 try {
     // Hardcoded string
-    jwt = require('../../google_service_key.json');
+    jwt = require('../../private/google_service_key.json');
 } catch (error) {
     log.error(new Error('Error requiring google service key'));
 }

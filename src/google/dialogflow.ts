@@ -12,6 +12,9 @@ app.intent('actions.intent.MAIN', conv => {
     conv.ask(new SignIn('To start using crownstone dialog signin'));
 });
 
+/**
+ * This intent will be activayed when the users asks "Hey Google, Talk to <invocation name>"
+ */
 app.intent(
     'Default Welcome Intent',
     authorize(conv => {
@@ -20,6 +23,9 @@ app.intent(
     }),
 );
 
+/**
+ * This intent is executed when the user asks "IS there anyone home?"
+ */
 app.intent(
     'retro.anyone-home',
     authorize(async conv => {
@@ -44,6 +50,9 @@ app.intent(
     }),
 );
 
+/**
+ * This intent is executed when the user asks "Is X home?"
+ */
 app.intent(
     'retro.is-person-home',
     authorize(async conv => {
@@ -76,10 +85,17 @@ app.intent(
     }),
 );
 
+/**
+ * This intent is not implemented yet, and is disabled in the Dialogflow-console
+ */
 app.intent(
     'retro.why-device-state',
     authorize(() => {}),
 );
+
+/**
+ * This intent is not not implemented yet, and is disabled in the Dialogflow-console
+ */
 app.intent(
     'retro.why-device-active',
     authorize(() => {}),

@@ -1,8 +1,11 @@
-import { alexaSmartHomeBuilder } from '../utils/alexaSmartHomeBuilder';
+import { alexaSmartHomeBuilder } from './utils/alexaSmartHomeBuilder';
 import { createLogger } from '../utils/logger';
 
 const log = createLogger('alexa/smarthome');
 
+/**
+ * Handle Alexa smart home intents
+ */
 export const smarthome = alexaSmartHomeBuilder({
     'Alexa.Discovery': async ({ header }, api) => {
         const stones = await api.getStones();
