@@ -29,7 +29,7 @@
         "ask-sdk-core": "^2.8.0",
         "ask-sdk-model": "^1.25.2",
         "got": "^11.3.0",
-        "i18next": "^19.5.1",
+        "i18next": "^19.6.0",
         "lodash.flattendeep": "^4.4.0",
         "source-map-support": "^0.5.19"
     }
