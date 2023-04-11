@@ -2,7 +2,7 @@
 
 > Lambda function for handeling Google Smart Home, Alexa Smart Home skill and Dialogflow intents
 
-## Table of Contents (Optional)
+## Table of Contents
 
 -   [Installation](#installation)
 -   [Features](#features)
